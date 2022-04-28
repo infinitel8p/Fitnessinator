@@ -1,0 +1,16 @@
+{
+	"monday": [
+		{ "Name": "Übung 1 Montag", "Gewicht": "10kg", "Reps": 12 },
+		{ "Name": "Übung 2 Montag", "Gewicht": "35kg", "Reps": 8 }
+	],
+	"tuesday": [],
+	"wednesday": [
+		{ "Name": "Übung 1 Mittwoch", "Gewicht": "10kg", "Reps": 12 },
+		{ "Name": "Übung 2 Mittwoch", "Gewicht": "35kg", "Reps": 8 }
+	],
+	"thursday": [],
+	"friday": [
+		{ "Name": "Übung 1 Freitag", "Gewicht": "10kg", "Reps": 12 },
+		{ "Name": "Übung 2 Freitag", "Gewicht": "35kg", "Reps": 8 }
+	]
+}
