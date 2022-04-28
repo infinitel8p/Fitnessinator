@@ -1,3 +1,4 @@
+package tests;
 /*
 Kurzes Test Programm -
 Einfache Methoden werden auf funktionalität getestet
