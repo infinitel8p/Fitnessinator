@@ -20,7 +20,6 @@ def menu():
 Bitte wähle eine Zahl
 """)
 
-
     if menu == "1":
         mein_trainingsplan()
     elif menu == "2":
