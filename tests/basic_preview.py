@@ -20,12 +20,13 @@ def menu():
 Bitte wähle eine Zahl
 """)
 
+
     if menu == "1":
         mein_trainingsplan()
     elif menu == "2":
-        pass
+        neuer_eintrag()
     elif menu == "3":
-        pass
+        eintrag_löschen()
     elif menu == "4":
         exit()
     else:
