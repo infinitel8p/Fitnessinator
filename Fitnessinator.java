@@ -2,6 +2,7 @@
 import java.util.Scanner;
 // import des packages MeinTrainingsplan aus packages (ähnlich wie selbst geschriebene Module in python in eine andere Datei zu importieren)
 import packages.MeinTrainingsplan;
+import packages.NeuerEintrag;
 
 //erstelle klasse fitnessinator
 public class Fitnessinator {
@@ -33,7 +34,7 @@ public class Fitnessinator {
                 //wenn eingabe 1 war dann wird MeinTrainingsplan.java aufgerufen
                 MeinTrainingsplan.main(args);
             } else if (scannedText.equals("2")) {
-                System.out.println(result + scannedText);
+                NeuerEintrag.main(args);
             } else if (scannedText.equals("3")) {
                 System.out.println(result + scannedText);
             } else if (scannedText == "4") {
