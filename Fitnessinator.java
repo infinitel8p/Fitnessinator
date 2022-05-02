@@ -10,7 +10,7 @@ public class Fitnessinator {
     public static void main(String[] args) {
         // println das Men
         System.out.println(
-                "Men\u00fc:\n1 = Mein Trainingsplan\n2 = Neuer Eintrag\n3 = Eintrag l\u00f6schen\n4 = Beenden\n\nBitte w\u00e4hle eine Zahl");
+                "Men\u00fc:\n1 = Mein Trainingsplan\n2 = Neuer Eintrag\n3 = Eintrag l\u00f6schen\n4 = Beenden\n5 & 6 = test\n\nBitte w\u00e4hle eine Zahl");
         /*
         im folgenden wollen wir eine eingabe vom user bekommen
         dafür nutzen wir den importierten scanner
@@ -19,8 +19,8 @@ public class Fitnessinator {
         wenn man das scannen und verarbeiten in einen try block schreibt wird der scanner anschließend automatisch geschlossen, deswegen hier das try
         */
         try (
-            // erstelle einen scanner und lasse input fordern
-            Scanner scannerVariable = new Scanner(System.in)) {
+                // erstelle einen scanner und lasse input fordern
+                Scanner scannerVariable = new Scanner(System.in)) {
             //erstelle strings mit auszugebenden Text
             String result = "Sie haben gew\u00e4hlt: ";
             String scannedText = scannerVariable.nextLine();
@@ -39,11 +39,21 @@ public class Fitnessinator {
                 System.out.println(result + scannedText);
             } else if (scannedText == "4") {
                 System.out.println(result + scannedText);
+            } else if (scannedText.equals("5")) {
+                test(args);
+            } else if (scannedText.equals("6")) {
+                Fitnessinator.test(args);
             } else {
                 // Sollte die Eingabe nicht 1,2 oder 3 sein (4 wird nicht gehen, da nicht mit equals() verglichen wird) dann wird der Fitnessinator.java erneut aufgerufen
                 System.out.println("Eingabe nicht erkannt! -> " + scannedText);
                 Fitnessinator.main(args);
             }
         }
+    }
+
+    // test einer weiteren funktion in einer klasse
+    public static void test(String[] args)
+    {
+        System.out.println("test");
     }
 }
