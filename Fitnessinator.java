@@ -11,7 +11,7 @@ public class Fitnessinator {
         // println das Men
         System.out.println(
                 "Men\u00fc:\n1 = Mein Trainingsplan\n2 = Neuer Eintrag\n3 = Eintrag l\u00f6schen\n4 = Beenden\n\nBitte w\u00e4hle eine Zahl");
-        /* 
+        /*
         im folgenden wollen wir eine eingabe vom user bekommen
         dafür nutzen wir den importierten scanner
         wenn man einen scanner verwendet soll man ihn wieder schließen (nicht schließen gibt folgende fm in manchen lintern: Resource leak: 'scanner Variable' is never closed)
@@ -40,7 +40,9 @@ public class Fitnessinator {
             } else if (scannedText == "4") {
                 System.out.println(result + scannedText);
             } else {
+                // Sollte die Eingabe nicht 1,2 oder 3 sein (4 wird nicht gehen, da nicht mit equals() verglichen wird) dann wird der Fitnessinator.java erneut aufgerufen
                 System.out.println("Eingabe nicht erkannt! -> " + scannedText);
+                Fitnessinator.main(args);
             }
         }
     }
