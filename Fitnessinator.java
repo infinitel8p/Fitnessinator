@@ -34,14 +34,19 @@ public class Fitnessinator {
                 //wenn eingabe 1 war dann wird MeinTrainingsplan.java aufgerufen
                 MeinTrainingsplan.main(args);
             } else if (scannedText.equals("2")) {
+                //wenn eingabe 2 war dann wird NeuerEintrag.java aufgerufen
                 NeuerEintrag.main(args);
             } else if (scannedText.equals("3")) {
+                //wenn eingabe 3 war dann wird die Variable result + die eingabe ausgegeben
                 System.out.println(result + scannedText);
             } else if (scannedText == "4") {
+                //wenn eingabe 4 war dann sollte die Variable result + die eingabe ausgegeben werden, da jedoch der vergleich wie weiter oben beschrieben nicht mit equals() durchgeführt wurde landet man bei der else bedingung
                 System.out.println(result + scannedText);
             } else if (scannedText.equals("5")) {
+                //wenn eingabe 5 war dann landet man unten bei test
                 test(args);
             } else if (scannedText.equals("6")) {
+                //wenn eingabe 6 war dann landet man ebenfalls unten bei test (test um zu gucken ob "test(args);" oder "Fitnessinator.test(args);" besser ist da beide anscheinend klappen und uns weiterleiten)
                 Fitnessinator.test(args);
             } else {
                 // Sollte die Eingabe nicht 1,2 oder 3 sein (4 wird nicht gehen, da nicht mit equals() verglichen wird) dann wird der Fitnessinator.java erneut aufgerufen
