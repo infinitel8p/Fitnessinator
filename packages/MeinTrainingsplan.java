@@ -7,7 +7,7 @@ public class MeinTrainingsplan {
         // System.out.flush() wird speziell dafür benutzt, die verbleibenden Bytes bei Verwendung von System.out.print() zu löschen, so dass nichts auf dem Konsolenbildschirm ausgelassen wird.
         System.out.print("\033[H\033[2J");
         System.out.flush();
-        // Kurze Ausgabe dass wir erfolgreich aus Fitnessinator.java in MeinTrainingsplan.java geleitet wurden
+        // Kurze Ausgabe, dass wir erfolgreich aus Fitnessinator.java in MeinTrainingsplan.java geleitet wurden
         System.out.println("Weiterleitung war erfolgreich!");
         System.out.println("\"MeinTrainingsplan.java\" wurde aufgerufen");
     }
